@@ -22,7 +22,7 @@ with open(csvpath, newline='') as csvfile:
 #Make calculations
 totalmonth = len(floatnet)
 total = sum(floatnet)
-mean = sum(floatnet)/len(floatnet)
+mean = round(sum(floatnet)/len(floatnet), 2)
 greatincrease = max(floatnet)
 greatdecrease = min(floatnet)
 indexincrease = floatnet.index(greatincrease)
