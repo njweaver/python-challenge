@@ -11,13 +11,14 @@ with open(csvpath, newline='') as csvfile:
 
     csvreader = csv.reader(csvfile, delimiter=',')
 
-    csv_header = next(csvreader)
+    next(csvreader)
 
     
     # Read row
     for row in csvreader:
         floatnet.append(float(row[1]))
         monthlist.append(row[0])
+
 
 #Make calculations
 totalmonth = len(floatnet)
